@@ -1,0 +1,5 @@
+<div class="row m-0">
+    <div class="col-3 mt-2"  *ngFor="let user of users | async">
+        <app-user [user]="user" (getTodosOfUser)="getUserTodos($event)"></app-user>
+    </div>
+</div>
