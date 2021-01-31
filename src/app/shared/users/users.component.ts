@@ -21,8 +21,7 @@ export class UsersComponent implements OnInit {
   getUsers(){
     this.users = this.userService.getUsers()
   }
-  getUserTodos(e){
-    console.log(e,'parent');
+  getUserTodos(e){    
     this.router.navigate(['/shared/todos'])
   }
 

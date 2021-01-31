@@ -14,7 +14,7 @@ export class Address{
     street:String
     suite:String
     city:String
-    zip:String
+    zipcode:String
     geo:Geo
 }
 
