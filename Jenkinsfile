@@ -15,8 +15,25 @@ pipeline{
         }
         stage('Test'){
             steps{
-                echo "I can see release ${RELEASE} but not loglevel"
+                echo "I can see release ${RELEASE}" but not loglevel ${LOG_LEVEL}
             }
+        }
+        stage('Deploy'){
+            input{
+                message 'Deploy?'
+                ok 'Do it'
+                parameters {
+                    string(name:'TARGET_ENVIRONMENT', defaultValue:'PROD',description:'Target deployment environment')
+                }
+            }
+            steps{
+                echo "Deploying release ${RELEASE} to environment ${TARGET_ENVIRONMENT}"
+            }
+        }
+    }
+    post{
+        always{
+            echo "prints deployment status"
         }
     }
 }
