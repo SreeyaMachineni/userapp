@@ -15,7 +15,7 @@ pipeline{
         }
         stage('Test'){
             steps{
-                echo "I can see release ${RELEASE}" but not loglevel"
+                echo "I can see release ${RELEASE} but not loglevel"
             }
         }
     }
