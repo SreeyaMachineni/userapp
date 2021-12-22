@@ -1,0 +1,19 @@
+.nav{
+    padding: 2rem;
+    background: lavenderblush;
+    margin: 0;
+    display: flex
+}
+.nav-links{
+    margin-left:auto 
+}
+
+.nav-links a{
+    padding-right: 1rem;
+    cursor: pointer;
+}
+.dropdown-menu{
+    margin-left: auto;
+    background: indigo;
+
+}

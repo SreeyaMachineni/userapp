@@ -1,0 +1,23 @@
+// .options{
+//     display: none;
+//     background: indigo;
+//     transition: 
+// }   
+
+// .card:hover .options{
+//     display: block
+// }
+
+.card-body > .options{
+    background: indigo;
+    visibility: hidden;
+    opacity: 0;
+    width: 0;
+    transition: visibility 0s, opacity 0.5s linear,width 0.5s;
+}
+
+.card-body:hover > .options{
+    visibility: visible;
+    opacity: 1;
+    width: 60%;
+}

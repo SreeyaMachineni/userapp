@@ -1,0 +1,10 @@
+<div class="card">
+    <div class="card-body">
+        <h5>{{user.username}}</h5>
+        <p class="card-text">{{user.name}}</p>
+        <div class="options text-white p-2">
+                <i class="fa fa-picture-o p-1 d-inline"></i>
+                <i class="fa fa-list p-1 d-inline" (click)="getTodos(user)"></i>
+        </div>
+    </div>
+</div>

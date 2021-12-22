@@ -1,0 +1,6 @@
+<div class="row mt-4 ">
+    
+    <div class="col-12" *ngFor="let todo of todos | async">
+        <app-todo [todo]="todo"></app-todo>
+    </div>
+</div>
